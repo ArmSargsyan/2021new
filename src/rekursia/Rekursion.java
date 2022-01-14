@@ -1,4 +1,4 @@
-package rekusia;
+package rekursia;
 
 public class Rekursion {
     public static void main(String[] args) {

@@ -58,8 +58,5 @@ public class TwoDArray {
             }
         }
         System.out.println(odd); //zuygeri qanak
-
-
-
     }
 }

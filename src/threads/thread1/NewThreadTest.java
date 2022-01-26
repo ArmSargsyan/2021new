@@ -1,4 +1,4 @@
-package threads;
+package threads.thread1;
 
 public class NewThreadTest {
     public static void main(String[] args) {

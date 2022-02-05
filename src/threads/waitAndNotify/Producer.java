@@ -9,7 +9,7 @@ public class Producer implements Runnable {
     }
     @Override
     public void run() {
-        int i = 1;
+        int i = 0;
         while (true){
             q.put(i++);
         }

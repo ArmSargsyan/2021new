@@ -16,7 +16,6 @@ public class Q {
         valueSet = false;
         notify();
         return n;
-
     }
 
     synchronized void put(int n) {

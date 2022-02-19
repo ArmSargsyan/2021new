@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/2022new.iml" filepath="$PROJECT_DIR$/2022new.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testdb/testdb.iml" filepath="$PROJECT_DIR$/testdb/testdb.iml" />
     </modules>
   </component>
 </project>

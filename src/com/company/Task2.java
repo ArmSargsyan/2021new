@@ -23,17 +23,18 @@ public class Task2 {
 
     public static int findSingleNumber(int[] array) {
         int count = 0;
-        for (int i = 0; i < array.length; i++) {
-            for (int j = 0; j < array.length; j++) {
-                if (array[i] == array[j]) {
+        for (int k : array) {
+            for (int i : array) {
+                if (k == i) {
                     count++;
                 }
             }
             if (count == 1) {
-                return array[i];
+                return k;
             }
             count = 0;
         }
-        return 0;
+        return -111;
+
     }
 }

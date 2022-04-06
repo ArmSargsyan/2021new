@@ -1,4 +1,4 @@
-package com.company;
+package qaTasks;
 
 public class Task2 {
      /* TODO: Task 2
@@ -13,13 +13,13 @@ public class Task2 {
         System.out.println("The single number is -> " + findSingleNumber(twinsArray));
     }
 
-//    public static int findSingleNumber(int[] array) {
-//        int num=0;
-//        for(int val: array){
-//            num^=val;
-//        }
-//        return num;
-//    }
+    public static int findSingleNumber2(int[] array) {
+        int num=0;
+        for(int val: array){
+            num^=val;
+        }
+        return num;
+    }
 
     public static int findSingleNumber(int[] array) {
         int count = 0;

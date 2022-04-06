@@ -1,34 +1,36 @@
-package interfaces.IntStack;
+package override.stack2_in_interface;
 
-public class FixedStack implements IntStack {
+import override.stack_in_interface.IntStack;
+
+public class DynStack implements IntStack {
+
     private int stck[];
     private int tos;
 
-    public FixedStack(int size) {
+    DynStack(int size) {
         stck = new int[size];
         tos = -1;
     }
 
     @Override
     public void push(int item) {
-        if (tos == stck.length - 1){
-            int temp[] = new int[stck.length * 2];
+        if (tos == stck.length - 1) {
+            int tmp[] = new int[stck.length * 2];
             for (int i = 0; i < stck.length; i++)
-                temp[i] = stck[i];
-            stck = temp;
+                tmp[i] = stck[i];
+            stck = tmp;
             stck[++tos] = item;
-        }else
+        } else
             stck[++tos] = item;
-
     }
 
     @Override
     public int pop() {
         if (tos < 0) {
-            System.out.println("Cтeк не загружен");
+            System.out.println("stack is not load ");
             return 0;
-        } else
+        }
+        else
             return stck[tos--];
-
     }
 }

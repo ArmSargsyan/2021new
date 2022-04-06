@@ -1,6 +1,5 @@
-package com.company;
+package qaTasks;
 
-import java.util.Random;
 import java.util.Scanner;
 
 public class Task3 {
@@ -21,8 +20,8 @@ public class Task3 {
 //        findMaxMin();      //Question 12
 //        armstrongNumber(); //Question 13
 //        fibonacciSeries(); //Question 14
-//        SumOfSeries();
-        guessMyNumber();
+//        SumOfSeries();     //Question 14
+          guessMyNumber();
     }
 
     /* TODO: Question 1
@@ -31,9 +30,7 @@ public class Task3 {
     public static void printNumbers(int count) {
         for (int i = 1; i < count; i++) {
             System.out.print(i + " ");
-
         }
-
     }
 
     /* TODO: Question 2
@@ -41,7 +38,6 @@ public class Task3 {
     */
     public static void sumNumbers() {
         int sum = 0;
-
         for (int i = 1; i <= 10; i++) {
             sum += i;
         }
@@ -134,7 +130,6 @@ public class Task3 {
             res = res / 10;
 
         }
-
         System.out.println("Reverse of " + number + " is " + reverse);
     }
 
@@ -158,7 +153,6 @@ public class Task3 {
             } else {
                 evenSum += number;
             }
-
             System.out.print("Do you want to continue y/n? ");
             choice = console.next().charAt(0);
 
@@ -255,10 +249,7 @@ public class Task3 {
                 countPositive = 0,
                 countNegative = 0,
                 countZero = 0;
-
         char choice;
-
-
         do {
             System.out.println("please input number ");
 
@@ -366,10 +357,8 @@ public class Task3 {
             int tmp = secondTerm;
             secondTerm = thirdTerm;
             firstTerm = tmp;
-
         }
     }
-
 
     /* TODO: Question 15
         Write a program to calculate the sum of following series where n is input by user.
@@ -408,11 +397,7 @@ public class Task3 {
         System.out.println("Guess My Number Game");
         System.out.println();
 
-        // TODO: Your code here
-
-
-
-        number  = (int) (Math.random() * 99);
+        number = (int) (Math.random() * 99);
         System.out.println(number);
 
         do {
@@ -424,10 +409,10 @@ public class Task3 {
                 System.out.println("the number you entered is less than the random number");
             }
             tries++;
-        }while(guess != number) ;
+        } while (guess != number);
 
-            System.out.println("you guessed the number");
-        System.out.println("did you try to guess "+tries+" times");
+        System.out.println("you guessed the number");
+        System.out.println("did you try to guess " + tries + " times");
     }
 
 }

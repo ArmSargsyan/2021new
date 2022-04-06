@@ -10,9 +10,9 @@ public class DBConnectionProvider {
     private volatile static Connection connection;
 
 
-    private static final String DB_URL = "";
+    private static final String DB_URL = "jdbc:mysql://localhost:3306/epam";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "";
+    private static final String DB_PASSWORD = "root";
     private static final String DB_DRIVER = "com.mysql.cj.jdbc.Driver";
 
     private DBConnectionProvider() {
@@ -34,7 +34,7 @@ public class DBConnectionProvider {
         return instance;
     }
 
-    public static Connection getConnection() {
+    public Connection getConnection() {
         try {
             if (connection == null || connection.isClosed()) {
                 connection = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);

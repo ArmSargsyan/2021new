@@ -1,4 +1,4 @@
-package builerPattern.builders;
+package patterns.builerPattern.builders;
 
 public class CarBuilder implements Builder{
 

@@ -6,10 +6,10 @@ public class User {
     private String name;
     private String password;
 
-    public User() {
+    public User(String max, int i, jUnitTest.Sex male) {
     }
 
-    public User(int id, String name, String password) {
+    public User(String id, int name, jUnitTest.Sex password) {
         this.id = id;
         this.name = name;
         this.password = password;
